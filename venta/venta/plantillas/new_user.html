@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block cuerpo %}
+		<div class="main">
+			<div class="shell">
+				<span class="main-arr"></span>
+				<!-- content -->
+				<div class="content">
+					<h3>Datos de Usuario</h3>
+                    <div class="col">
+				         <form action="" method="POST" class="form-horizontal"> {% csrf_token %}
+                            {{ formulario.as_p }}
+
+                                    {% for field in formularioPerfil %}
+						                {{field.errors}}
+
+						            <div class = "control-group">
+							            {{ field.label_tag }}
+							            <div class="controls">
+								            {{ field}}
+
+							            </div>
+
+						            </div>
+					                {% endfor %}
+
+                                    <input type="submit" class="send-btn" value="GUARDAR">
+
+                         </form>
+                    </div>
+				</div>
+				<!-- end of content -->
+
+				<div class="cl">&nbsp;</div>
+			</div>
+		</div>
+{% endblock cuerpo %}

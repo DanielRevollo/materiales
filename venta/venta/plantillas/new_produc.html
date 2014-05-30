@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% block cuerpo %}
+    <section class="bottom-section" xmlns="http://www.w3.org/1999/html">
+	<div class="shell">
+		<div class="cols">
+			<div class="col">
+				<div class="newsletter">
+
+				</div>
+			</div>
+
+					<div class="col">
+						<h4>FORMULARIO PRODUCTO</h4>
+						<ul>
+							<li>
+                            <form action="" method="post" enctype="multipart/form-data" class="form-horizontal">{% csrf_token %}
+                            		{% for field in formularioproducto %}
+                                        {{field.errors}}
+                                     <div class = "control-group">
+							            {{ field.label_tag }}
+							            <div class="controls">
+								             {{ field}}
+
+							            </div>
+
+						            </div>
+					                {% endfor %}
+
+                                    {% for field in formulariostock %}
+						                {{field.errors}}
+
+						            <div class = "control-group">
+							            {{ field.label_tag }}
+							            <div class="controls">
+								            {{ field}}
+
+							            </div>
+
+						            </div>
+					                {% endfor %}
+
+                                    <button type="submit" class="btn">GUARDAR</button>
+
+			                	</form>
+                            </li>
+						</ul>
+					</div>
+
+					<div class="col">
+
+					</div>
+					<div class="cl">&nbsp;</div>
+				</div>
+			</div>
+    </section>
+
+{% endblock cuerpo %}

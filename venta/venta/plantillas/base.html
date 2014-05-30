@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Metamorphosis Design Free Css Templates
+		{% block titulo %}
+			Index
+		{% endblock titulo %}
+</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="{{ STATIC_URL }}html/styles.css" rel="stylesheet" type="html/text/css" media="screen" />
+</head>
+<body>
+<div id="content">
+<!-- header -->
+	<div id="header">
+		<div id="logo">
+			<h1><a href="#">metamorph_city</a></h1>
+			<h2><a href="#" id="metamorph">Design by Metamorphosis Design</a></h2>
+		</div>
+		<div id="menu">
+			<ul>
+				<li id="button1"><a href="http://127.0.0.1:8000/" title="">Inicio</a></li>
+				<li id="button2"><a href="http://127.0.0.1:8000/productos/" title="">Productos</a></li>
+                <li id="button2"><a href="http://127.0.0.1:8000/contacto/" title="">Contactanos</a></li>
+                {% if user.is_authenticated %}
+				<li id="button4"><a href="{% url 'venta.apps.usuarios.views.logout_view' %}" title="">Cerrar</a></li>
+                {% else %}
+                <li id="button4"><a href="{% url 'venta.apps.usuarios.views.login_view' %}" title="">Iniciar</a></li>
+				<li id="button5"><a href="http://127.0.0.1:8000/usuario/new/" title="">Registrate</a></li>
+                {% endif %}
+
+			</ul>
+		</div>
+	</div>
+<!-- / header-->
+<!-- content -->
+
+	<div id="main"><div class="inner_copy"></div>
+		<div id="right">
+			<h4>Metamorphosis Design</h4>
+            {% block cuerpo %}
+			<img src="{{ STATIC_URL }}html/images/pic01.jpg" title="" alt="" style="float:left;padding-right:20px;padding-bottom:10px"/>
+			<p>This website template is released under a Creative Commons Attribution 2.5 License</p>
+			<p>
+- You cannot remove copyright notice from this design without our permission.<br />- If you modify this design it still should contain copyright because it is based on our work.<br />- You may copy, distribute, modify, etc. this template as long as link to our website remains untouched.<br />For support visit <a href="#">http://www.metamorphozis.com/contact/contact.php</a><br /><br />The Metamorphosis Design : 2009
+			</p>
+
+            {% endblock cuerpo %}
+			<div id="center">
+				<h4>Free Website Templates</h4>
+				<img src="{{ STATIC_URL }}html/images/pic02.jpg" title="" alt="" style="float:left; padding-right:20px; padding-bottom: 10px;"/>
+				<p>Consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
+
+                <div class="date">
+					<ul>
+						<li><a href="#" class="small_icon1">Favourite</a></li>
+						<li><a href="#" class="small_icon2">Comments</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div id="left">
+			<h3>Categories</h3>
+			<ul>
+				<li><a href="#">January 2009</a></li>
+				<li><a href="#">February 2009</a></li>
+				<li><a href="#">March 2009</a></li>
+				<li><a href="#">April 2009</a></li>
+				<li><a href="#">May 2009</a></li>
+				<li><a href="#">June 2009</a></li>
+                <li><a href="#">June 2009</a></li>
+                <li><a href="#">June 2009</a></li>
+                <li><a href="#">June 2009</a></li>
+			</ul>
+
+		</div>
+	</div>
+
+<!-- / content -->
+<!--footer -->
+	<div id="footer">
+		<div class="fleft"><p>Copyright statement.</p></div>
+		<div class="fright"><p>La selecci&oacute;n de plantillas web gratis <a href="http://www.mejoresplantillasgratis.es" target="_blank">en este sitio web</a>.</p></div><div class="fclear"></div>
+		<p>Design by <a href="http://www.metamorphozis.com/" title="Free Web Templates">Free Web Templates</a></p>
+	</div>
+</div>
+
+<!-- / footer -->
+</body>
+</html>
+
+

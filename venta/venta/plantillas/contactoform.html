@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{%block cuerpo %}
+<section class="bottom-section" xmlns="http://www.w3.org/1999/html">
+			<div class="shell">
+				<div class="cols">
+					<div class="col">
+						<div class="newsletter">
+
+						</div>
+					</div>
+
+					<div class="col">
+						<h4>Contactanos</h4>
+						<ul>
+							<li>
+                            <div class="row">
+			                    <div class="span3"></div>
+			                        <div class="span6">
+                                        {% if info_enviado %}
+                                           Gracias pro enviar un comentario, nos contactaremos contigo
+                                            <br>
+                                                La informacion  recibida es la siguiente<br>
+                                            <p>Email utlizado:{{ email }}</p>
+                                            <p>Texto Citado:</p><br><h3>{{ texto }}</h3>
+                                        {% else %}
+                                            <form  action="." method="POST">
+                                                {% csrf_token %}
+                                                {{ form.as_p }}
+                                                <input type="submit" value="Enviar"/>
+                                            </form>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            </li>
+						</ul>
+					</div>
+
+					<div class="col">
+
+					</div>
+					<div class="cl">&nbsp;</div>
+				</div>
+			</div>
+		</section>
+{% endblock cuerpo %}

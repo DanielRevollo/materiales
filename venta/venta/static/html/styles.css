@@ -1,0 +1,51 @@
+/*
+Design by Metamorphosis Design
+http://www.metamorphozis.com
+Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+* {margin:0;padding:0}
+.fleft {float:left}
+.fright {float:right}
+.fclear {clear:both}
+a:link {color:#69000d;font-family:Arial,Helvetica,sans-serif;font-size:12px;text-decoration:none;font-weight:bold}
+a:hover {text-decoration:none;color:#fff}
+a:visited {color:#EC5D3B}
+body {background:#be4b19 url(images/bg_top.jpg) top repeat-x;font:12px Arial,Helvetica,sans-serif;color:#000}
+#content {margin:0 auto;width:999px;text-align:left;background:#220000 url(images/header.jpg) no-repeat top;border-left:15px solid #fff;border-right:15px solid #fff}
+.inner_copy {border:0;color:#f00;float:left;width:50% !important;margin:-100% 0 0 0;overflow:hidden;line-height:0;padding:0;font-size:11px}
+#main {width:999px;margin:0 auto;clear:both}
+#header {height:320px;width:870px}
+#logo {height:231px;text-align:left;width:770px;padding-left:200px;padding-top:30px}
+#logo a {text-decoration:none;text-transform:lowercase;font-style:italic;font-size:18px;color:#fff}
+#logo H2 a {font-size:12px}
+#menu {width:549px;height:45px;padding-left:450px}
+#menu ul {list-style:none}
+#menu li {display:inline}
+#menu a {float:left;width:100px;height:28px;display:block;text-align:center;text-decoration:none;color:#fff;font-weight:bold;padding-top:17px;font-size:14px;text-transform:uppercase}
+#menu a:hover {width:100px;height:34px;background:url(images/menu_hov.jpg) repeat-x;text-decoration:underline}
+#left {width:259px;padding-left:5px;padding-right:5px;padding-top:90px}
+#left a {color:#fff;text-decoration:none;font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:normal}
+#left a:hover {text-decoration:underline}
+#left H3 {font-family:Georgia, "Times New Roman", Times, serif;font-size:18px;width:204px;height:36px;font-weight:normal;padding-left:55px;padding-top:12px;color:#fff;background:url(images/left_title.jpg) no-repeat}
+#left ul {list-style:none;margin-bottom:15px;margin-left:10px;padding-top:15px}
+#left li {background:url(images/ls.png) no-repeat left top;padding-left:20px;margin-bottom:8px}
+#left p {padding:10px;color:#196050}
+#right {float:right;width:670px;background:url(images/rightbg.png);margin-right:5px;margin-bottom:10px;padding-left:25px;padding-right:25px}
+#right H4 {font-family:Georgia, "Times New Roman", Times, serif;font-size:18px;width:441px;height:30px;font-weight:normal;padding-top:18px;color:#fff}
+#right p {margin:0;padding:0;padding-bottom:10px}
+#right ol, #right ul {margin-left:30px}
+#right h2 {margin:0;padding:0;padding-top:10px;color:#196050}
+#rightleft {width:330px;float:left}
+#rightleft p {padding-right:5px}
+#rightright {width:330px;float:right}
+#rightright p {padding-left:0}
+.date {height:41px;margin-top:10px;padding-top:3px;font-size:10px}
+.date ul {list-style:none;padding-left:0;display:inline}
+.date li {padding-left:0;display:inline;list-style:none}
+#right ul li .small_icon1 {width:110px;background:url(images/icon1.png) no-repeat;height:24px;float:left;display:block;text-align:left;padding-top:6px;padding-left:30px;padding-right:15px;color:#fff;font-size:12px;text-decoration:none}
+#right ul li .small_icon2 {width:80px;background:url(images/icon2.png) no-repeat;height:24px;float:left;display:block;text-align:left;padding-top:6px;padding-left:30px;padding-right:15px;color:#fff;font-size:12px;text-decoration:none}
+#footer {height:36px;clear:both;padding-top:10px;background:url(images/footer.jpg) repeat-x top;padding-bottom:10px}
+#footer div {padding:0 15px}
+#footer p {margin:0;font-size:10px;text-align:center;color:#fff}
+#footer a {color:#fff}
