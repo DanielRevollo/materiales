@@ -1,6 +1,7 @@
 from django.conf.urls import patterns, include, url
 
 # Uncomment the next two lines to enable the admin:
+from django.conf import settings
 from django.contrib import admin
 admin.autodiscover()
 
@@ -15,6 +16,9 @@ urlpatterns = patterns('',
     # Uncomment the next line to enable the admin:
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$', 'venta.apps.principal.views.home'),
+
+    #esta dirccion es importante para que te cargue las imagenes subidas
+    url(r'^media/(?P<path>.*)$','django.views.static.serve',{'document_root':settings.MEDIA_ROOT,}),
 
     #registro categoria y registro de producto
     url(r'^producto/nueva/$','venta.apps.principal.views.create_producto'),
@@ -37,6 +41,13 @@ urlpatterns = patterns('',
     url(r'^principal/update/(?P<id_prod>\d+)/$', 'venta.apps.principal.views.update_produc'),
     #CONTACTANOS
     url(r'^contacto/$','venta.apps.usuarios.views.contacto'),
+
+    #CARRITO DE VENTAS
+    url(r'^carrito/new/(?P<venta_id>\d+)/$', 'venta.apps.carrito.views.new_venta'),
+    url(r'^carrito/cantidad/(?P<id_venta>\d+)/(?P<id_pro>\d+)/$', 'venta.apps.carrito.views.new_cantidad'),
+    url(r'^carrito/confirmar/(?P<id_venta>\d+)/$', 'venta.apps.carrito.views.confirmar'),
+    #url(r'^carrito/factura/$', 'carrito.views.factura'),
+
 
 )
 
