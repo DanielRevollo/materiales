@@ -9,23 +9,16 @@
                     <div class="col">
 				         <form action="" method="POST" class="form-horizontal"> {% csrf_token %}
                             {{ formulario.as_p }}
-
                                     {% for field in formularioPerfil %}
 						                {{field.errors}}
-
-
 						            <div class = "control-group">
 							            {{ field.label_tag }}
 							            <div class="controls">
 								            {{ field}}
-
 							            </div>
-
 						            </div>
 					                {% endfor %}
-
                                     <input type="submit" class="send-btn" value="GUARDAR">
-
                          </form>
                     </div>
 				</div>
@@ -35,3 +28,5 @@
 			</div>
 		</div>
 {% endblock cuerpo %}
+{% block cuerpo2 %}
+{% endblock cuerpo2 %}
