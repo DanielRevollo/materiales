@@ -15,8 +15,9 @@
                                     <a href="{% url 'venta.apps.carrito.views.new_cantidad' venta.id producto.id %}">
                                         <div class="span6">
                                             <h6>{{ producto.nombre_pro }}</h6>
-                                            <img src="/media/{{ fila.portada }}" width="100" height="50">
+                                            <img src="/media/{{ producto.portada }}" width="100" height="50">
                                             <p><strong>Precio: </strong>{{ producto.Precio }} Bs.</p>
+                                            <p><strong>Disponible:</strong>{{ sto.cantidad }}</p>
                                             <p><strong></strong>{{ producto.descripcion }}</p>
                                         </div>
                                     </a>

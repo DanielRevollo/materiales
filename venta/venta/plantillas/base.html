@@ -16,15 +16,20 @@
 <!-- header -->
 	<div id="header">
 		<div id="logo">
-			<h1><a href="#">metamorph_city</a></h1>
-			<h2><a href="#" id="metamorph">Design by Metamorphosis Design</a></h2>
+
+			<h1><a href="#">La Casa del Constructor</a></h1>
+			<h2><a href="#" id="metamorph">El hogar de los materiales de construccion</a></h2>
+
 		</div>
+
 		<div id="menu">
+
 			<ul>
 				<li id="button1"><a href="http://127.0.0.1:8000/" title="">Inicio</a></li>
 				<li id="button2"><a href="http://127.0.0.1:8000/productos/" title="">Productos</a></li>
                 <li id="button2"><a href="http://127.0.0.1:8000/contacto/" title="">Contactanos</a></li>
                 {% if user.is_authenticated %}
+                <li id="button6"><a href="{% url 'venta.apps.carrito.views.new_venta' 0 %}" title="">Comprar</a></li>
 				<li id="button4"><a href="{% url 'venta.apps.usuarios.views.logout_view' %}" title="">Cerrar</a></li>
                 {% else %}
                 <li id="button4"><a href="{% url 'venta.apps.usuarios.views.login_view' %}" title="">Iniciar</a></li>
@@ -39,41 +44,50 @@
 
 	<div id="main"><div class="inner_copy"></div>
 		<div id="right">
-			<h4>Metamorphosis Design</h4>
+            <h2>{% if user.is_authenticated %}
+                    <p> Bienvenido usuario:{{ user.username |capfirst}}</p>
+                {% endif %}
+            </h2>
             {% block cuerpo %}
-			<img src="{{ STATIC_URL }}html/images/pic01.jpg" title="" alt="" style="float:left;padding-right:20px;padding-bottom:10px"/>
-			<p>This website template is released under a Creative Commons Attribution 2.5 License</p>
+			<img src="{{ STATIC_URL }}html/images/9349.png" title="" alt="" style="float:left;padding-right:20px;padding-bottom:10px"/>
+			<h4><p>MISION: </p></h4>
 			<p>
-- You cannot remove copyright notice from this design without our permission.<br />- If you modify this design it still should contain copyright because it is based on our work.<br />- You may copy, distribute, modify, etc. this template as long as link to our website remains untouched.<br />For support visit <a href="#">http://www.metamorphozis.com/contact/contact.php</a><br /><br />The Metamorphosis Design : 2009
+            -Nuestra mision es ofrecer a los clientes produstos de calidad a un buen precio <br />
+			</p>
+            <h4><p>VISION: </p></h4>
+			<p>
+            -Nuestra vision es llegar a ser una distribuiodaras mas importantes del pais <br />
 			</p>
 
-            {% endblock cuerpo %}
+
 			<div id="center">
-				<h4>Free Website Templates</h4>
-				<img src="{{ STATIC_URL }}html/images/pic02.jpg" title="" alt="" style="float:left; padding-right:20px; padding-bottom: 10px;"/>
-				<p>Consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
+				<h4>Nuestra direccion: </h4>
+				<img src="{{ STATIC_URL }}html/images/ECO1_ad.jpg" title="" alt="" style="float:left; padding-right:20px; padding-bottom: 10px;"/>
+				<p>Chayanta#47 ** Zona Mercado Uyuni ** Potosi-Bolivia</p>
+
+                <p>Telefono:62-63040 **79502220  </p>
+                <p>Email: lacasadelconstructor@hotmail.com</p>
 
                 <div class="date">
 					<ul>
-						<li><a href="#" class="small_icon1">Favourite</a></li>
-						<li><a href="#" class="small_icon2">Comments</a></li>
+						<li><a href="http://127.0.0.1:8000/usuario/new/" class="small_icon1">Registrate</a></li>
+						<li><a href="http://127.0.0.1:8000/contacto/" class="small_icon2">Contactanos</a></li>
 					</ul>
 				</div>
 			</div>
+            {% endblock cuerpo %}
 		</div>
 
 		<div id="left">
-			<h3>Categories</h3>
+			<h3><a href="http://127.0.0.1:8000/categorias/">Categorias</a></h3>
 			<ul>
-				<li><a href="#">January 2009</a></li>
-				<li><a href="#">February 2009</a></li>
-				<li><a href="#">March 2009</a></li>
-				<li><a href="#">April 2009</a></li>
-				<li><a href="#">May 2009</a></li>
-				<li><a href="#">June 2009</a></li>
-                <li><a href="#">June 2009</a></li>
-                <li><a href="#">June 2009</a></li>
-                <li><a href="#">June 2009</a></li>
+                {% if user.is_authenticated %}
+				<li><a href="http://127.0.0.1:8000/categoria/nueva/">Agragar categoria</a></li>
+                {% endif %}
+				<li><a href="#">Calaminas</a></li>
+				<li><a href="#">Cementos</a></li>
+				<li><a href="#">Pinturas</a></li>
+
 			</ul>
 
 		</div>
@@ -82,9 +96,9 @@
 <!-- / content -->
 <!--footer -->
 	<div id="footer">
-		<div class="fleft"><p>Copyright statement.</p></div>
-		<div class="fright"><p>La selecci&oacute;n de plantillas web gratis <a href="http://www.mejoresplantillasgratis.es" target="_blank">en este sitio web</a>.</p></div><div class="fclear"></div>
-		<p>Design by <a href="http://www.metamorphozis.com/" title="Free Web Templates">Free Web Templates</a></p>
+		<div class="fleft"><p>La casa del constructor</p></div>
+		<div class="fright"><p>Haga sus pedidos&oacute; <a href="http://www.mejoresplantillasgratis.es" target="_blank">en este sitio web</a>.</p></div><div class="fclear"></div>
+		<p> <a href="http://www.metamorphozis.com/" title="Free Web Templates">www.lacasadelconstructor.com</a></p>
 	</div>
 </div>
 

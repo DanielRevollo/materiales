@@ -13,18 +13,18 @@
 					<div class="col">
 						<h4>LISTADO DE CATEGORIAS</h4>
 						<ul>
-							<li>
+
                             <form action="" method="post" enctype="multipart/form-data" class="form-horizontal">{% csrf_token %}
-                                <h1>Nuestras categorias</h1>
-                                <ul>
-                                <a href="/categoria/nueva" class="more-btn">Agregar </a>
+
+                                <a href="/categoria/nueva" class="more-btn"><h4>Agregar categoria</h4> </a>
                                 {% for dato in lista %}
                                 <li>
-                                <a href="/categoria/nueva{{ dato.id_cat }}">{{ dato.nombre_cat }}</a><br>
+                                <h3>{{ dato.nombre_cat }}</h3>
 
-                                </li>
+
+
                                 {% endfor %}
-                        </ul>
+
                             </form>
                             </li>
 						</ul>

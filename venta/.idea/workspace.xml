@@ -5,22 +5,24 @@
     <ignored path="venta.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/settings.py" changelist="b97a9e48-d169-4714-9baf-7cf412724083" time="1399750787847" ignored="false" />
-    <file path="/views.py" changelist="b97a9e48-d169-4714-9baf-7cf412724083" time="1399753145492" ignored="false" />
+    <file path="/views.py" changelist="b97a9e48-d169-4714-9baf-7cf412724083" time="1400615411546" ignored="false" />
     <file path="/urls.py" changelist="b97a9e48-d169-4714-9baf-7cf412724083" time="1399752241590" ignored="false" />
-    <file path="/base.html" changelist="b97a9e48-d169-4714-9baf-7cf412724083" time="1399316384205" ignored="false" />
+    <file path="/base.html" changelist="b97a9e48-d169-4714-9baf-7cf412724083" time="1400621936592" ignored="false" />
     <file path="/models.py" changelist="b97a9e48-d169-4714-9baf-7cf412724083" time="1399753411064" ignored="false" />
     <file path="/admin.py" changelist="b97a9e48-d169-4714-9baf-7cf412724083" time="1399155218487" ignored="false" />
-    <file path="/new_produc.html" changelist="b97a9e48-d169-4714-9baf-7cf412724083" time="1399148865492" ignored="false" />
+    <file path="/new_produc.html" changelist="b97a9e48-d169-4714-9baf-7cf412724083" time="1400527476672" ignored="false" />
     <file path="/forms.py" changelist="b97a9e48-d169-4714-9baf-7cf412724083" time="1399409561647" ignored="false" />
-    <file path="/new_user.html" changelist="b97a9e48-d169-4714-9baf-7cf412724083" time="1399156526483" ignored="false" />
+    <file path="/new_user.html" changelist="b97a9e48-d169-4714-9baf-7cf412724083" time="1400613796261" ignored="false" />
     <file path="/login.html" changelist="b97a9e48-d169-4714-9baf-7cf412724083" time="1399315068163" ignored="false" />
-    <file path="/lista_categorias.html" changelist="b97a9e48-d169-4714-9baf-7cf412724083" time="1399317058008" ignored="false" />
+    <file path="/lista_categorias.html" changelist="b97a9e48-d169-4714-9baf-7cf412724083" time="1400529746068" ignored="false" />
     <file path="F:/supermerc/supermerc/urls.py" changelist="b97a9e48-d169-4714-9baf-7cf412724083" time="1399317125188" ignored="false" />
-    <file path="/lista_producto.html" changelist="b97a9e48-d169-4714-9baf-7cf412724083" time="1399322994270" ignored="false" />
+    <file path="/lista_producto.html" changelist="b97a9e48-d169-4714-9baf-7cf412724083" time="1400622965933" ignored="false" />
     <file path="F:/supermerc/supermerc/plantillas/lista_producto.html" changelist="b97a9e48-d169-4714-9baf-7cf412724083" time="1399318722617" ignored="false" />
     <file path="/update_produc.html" changelist="b97a9e48-d169-4714-9baf-7cf412724083" time="1399322932039" ignored="false" />
-    <file path="/new_venta.html" changelist="b97a9e48-d169-4714-9baf-7cf412724083" time="1399754738439" ignored="false" />
+    <file path="/new_venta.html" changelist="b97a9e48-d169-4714-9baf-7cf412724083" time="1400533712241" ignored="false" />
     <file path="/form.py" changelist="b97a9e48-d169-4714-9baf-7cf412724083" time="1399753350768" ignored="false" />
+    <file path="F:/supermerc/principal/views.py" changelist="b97a9e48-d169-4714-9baf-7cf412724083" time="1400532998794" ignored="false" />
+    <file path="/cantidad.html" changelist="b97a9e48-d169-4714-9baf-7cf412724083" time="1400533783393" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,10 +42,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/venta/urls.py">
+      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/venta/apps/usuarios/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="37" selection-start="1309" selection-end="1309" vertical-scroll-proportion="0.0">
+            <state line="11" column="32" selection-start="535" selection-end="535" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/venta/apps/usuarios/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="85" column="0" selection-start="3393" selection-end="3393" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -52,67 +63,28 @@
       <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/venta/apps/carrito/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="10" selection-start="629" selection-end="629" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#24#82#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="new_venta.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/venta/plantillas/carrito/new_venta.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="59" selection-start="1566" selection-end="1566" vertical-scroll-proportion="0.4598131">
+            <state line="48" column="39" selection-start="1825" selection-end="1825" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cantidad.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/venta/plantillas/carrito/cantidad.html">
+      <file leaf-file-name="base.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/venta/plantillas/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="23" selection-start="496" selection-end="496" vertical-scroll-proportion="-11.769231">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="form.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/venta/apps/carrito/form.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="120" selection-end="120" vertical-scroll-proportion="0.0">
+            <state line="77" column="33" selection-start="3012" selection-end="3012" vertical-scroll-proportion="-50.346153">
               <folding>
-                <marker date="1399753374882" expanded="true" signature="57:119" placeholder="..." />
+                <element signature="n#style#0;n#img#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/venta/apps/carrito/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="40" selection-start="156" selection-end="156" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="lista_producto.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="lista_producto.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/venta/plantillas/lista_producto.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="24" selection-start="478" selection-end="539" vertical-scroll-proportion="-8.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/venta/apps/principal/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="11" selection-start="2502" selection-end="2502" vertical-scroll-proportion="0.0">
+            <state line="13" column="25" selection-start="439" selection-end="439" vertical-scroll-proportion="0.3813084">
               <folding />
             </state>
           </provider>
@@ -128,22 +100,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/venta/plantillas/login.html" />
-        <option value="$PROJECT_DIR$/venta/plantillas/lista_categorias.html" />
-        <option value="$PROJECT_DIR$/venta/plantillas/update_produc.html" />
-        <option value="$PROJECT_DIR$/venta/plantillas/lista_producto.html" />
-        <option value="$PROJECT_DIR$/venta/apps/principal/views.py" />
         <option value="$PROJECT_DIR$/venta/apps/usuarios/views.py" />
         <option value="$PROJECT_DIR$/venta/apps/usuarios/forms.py" />
         <option value="$PROJECT_DIR$/venta/plantillas/contactoform.html" />
-        <option value="$PROJECT_DIR$/venta/plantillas/base.html" />
         <option value="$PROJECT_DIR$/venta/settings.py" />
-        <option value="$PROJECT_DIR$/venta/plantillas/carrito/cantidad.html" />
         <option value="$PROJECT_DIR$/venta/urls.py" />
         <option value="$PROJECT_DIR$/venta/apps/carrito/form.py" />
         <option value="$PROJECT_DIR$/venta/apps/carrito/models.py" />
-        <option value="$PROJECT_DIR$/venta/apps/carrito/views.py" />
+        <option value="$PROJECT_DIR$/venta/plantillas/new_produc.html" />
+        <option value="$PROJECT_DIR$/venta/apps/principal/views.py" />
+        <option value="$PROJECT_DIR$/venta/plantillas/lista_categorias.html" />
         <option value="$PROJECT_DIR$/venta/plantillas/carrito/new_venta.html" />
+        <option value="$PROJECT_DIR$/venta/plantillas/carrito/cantidad.html" />
+        <option value="$PROJECT_DIR$/venta/plantillas/new_user.html" />
+        <option value="$PROJECT_DIR$/venta/apps/carrito/views.py" />
+        <option value="$PROJECT_DIR$/venta/plantillas/base.html" />
+        <option value="$PROJECT_DIR$/venta/plantillas/lista_producto.html" />
       </list>
     </option>
   </component>
@@ -226,87 +198,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="venta" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="venta" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="venta" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="plantillas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="venta" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="venta" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="venta" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plantillas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="carrito" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="venta" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="venta" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="venta" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="carga" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="venta" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="venta" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="venta" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="carga" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="portada" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -357,10 +249,18 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="E:/seminario de sistemas/supermerc" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="dynamic.classpath" value="false" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <PyConsoleSettings />
+    </option>
+    <option name="myDjangoConsoleState">
+      <PyConsoleSettings />
+    </option>
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -452,7 +352,7 @@
     </configuration>
     <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
       <JSDebuggerConfigurationSettings>
-        <option name="engineId" />
+        <option name="engineId" value="embedded" />
         <option name="fileUrl" />
       </JSDebuggerConfigurationSettings>
       <method />
@@ -520,14 +420,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991454" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1310606" sideWeight="0.6700855" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2159091" sideWeight="0.6700855" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -611,135 +511,113 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/venta/apps/usuarios/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="31" selection-start="196" selection-end="196" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venta/apps/usuarios/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="457" selection-end="646" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/venta/plantillas/contactoform.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="18" selection-start="535" selection-end="535" vertical-scroll-proportion="0.0">
+        <state line="28" column="24" selection-start="1210" selection-end="1210" vertical-scroll-proportion="-18.307692">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/venta/plantillas/base.html">
+    <entry file="file://$PROJECT_DIR$/venta/plantillas/lista_categorias.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="50" selection-start="3296" selection-end="3296" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venta/apps/usuarios/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="25" selection-start="584" selection-end="584" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venta/plantillas/new_produc.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="0" selection-start="1503" selection-end="1503" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1399243937575" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1399243937575" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1399243937575" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1399243937575" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1399243937575" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1399243937575" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1399243937575" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1399243937575" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1399243937575" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1399243937575" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1399243937575" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1399243937575" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1399243937575" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1399243937575" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venta/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="131" column="25" selection-start="4764" selection-end="4764" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venta/plantillas/lista_producto.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="24" selection-start="478" selection-end="539" vertical-scroll-proportion="-8.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venta/apps/principal/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="4" selection-start="459" selection-end="470" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venta/apps/principal/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="11" selection-start="2502" selection-end="2502" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venta/apps/carrito/form.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="120" selection-end="120" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1399753374882" expanded="true" signature="57:119" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venta/apps/carrito/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="40" selection-start="156" selection-end="156" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venta/apps/carrito/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="10" selection-start="629" selection-end="629" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#24#82#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venta/plantillas/carrito/cantidad.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="23" selection-start="496" selection-end="496" vertical-scroll-proportion="-11.769231">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venta/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="37" selection-start="1309" selection-end="1309" vertical-scroll-proportion="0.0">
+        <state line="24" column="0" selection-start="711" selection-end="711" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/venta/plantillas/carrito/new_venta.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="59" selection-start="1566" selection-end="1566" vertical-scroll-proportion="0.4598131">
+        <state line="19" column="65" selection-start="1122" selection-end="1122" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venta/plantillas/carrito/cantidad.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="256" selection-end="256" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venta/apps/carrito/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="40" selection-start="156" selection-end="156" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venta/plantillas/new_user.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="0" selection-start="678" selection-end="678" vertical-scroll-proportion="-14.384615">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venta/apps/principal/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="23" selection-start="193" selection-end="193" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venta/plantillas/new_produc.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="76" selection-start="1275" selection-end="1275" vertical-scroll-proportion="-26.807692">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venta/apps/principal/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="106" selection-start="2296" selection-end="2296" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venta/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="53" selection-start="1161" selection-end="1161" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venta/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="131" column="25" selection-start="4764" selection-end="4764" vertical-scroll-proportion="0.8181818">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venta/apps/usuarios/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="32" selection-start="535" selection-end="535" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venta/apps/usuarios/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="85" column="0" selection-start="3393" selection-end="3393" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venta/apps/carrito/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="39" selection-start="1825" selection-end="1825" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venta/plantillas/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="77" column="33" selection-start="3012" selection-end="3012" vertical-scroll-proportion="-50.346153">
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venta/plantillas/lista_producto.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="25" selection-start="439" selection-end="439" vertical-scroll-proportion="0.3813084">
           <folding />
         </state>
       </provider>

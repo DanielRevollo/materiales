@@ -7,12 +7,14 @@ from venta.apps.principal.forms import *
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render_to_response, get_object_or_404
 from django.template import RequestContext
-
+from django.contrib.auth.decorators import login_required,permission_required
 
 def home(request):
     return render_to_response('base.html', context_instance=RequestContext(request))
 
 #========================== tablas de procdustos===============================
+
+@permission_required('principal.add_categoria',login_url='/')
 def new_categ(request):#esta funcion devuelve el formulario creado en form.py
     if request.method == 'POST':
         formulario = CategoriaForm(request.POST, request.FILES)
@@ -33,6 +35,7 @@ def new_stock(request):
         formulario = StockForm()
     return render_to_response('new_produc.html', {'formulario': formulario}, context_instance=RequestContext(request))
 
+@permission_required('principal.add_producto',login_url='/')
 def create_producto(request):
     if request.method == 'POST':
         formularioproducto = ProductoForm(request.POST, request.FILES)
@@ -49,7 +52,7 @@ def create_producto(request):
     return render_to_response('new_produc.html', {'formularioproducto':formularioproducto, 'formulariostock':formulariostock}, context_instance=RequestContext(request))
 
 #=========================== tablas de productos===========================================================
-
+@permission_required('principal.add_categoria',login_url='/')
 def lista_categorias(request):
     categorias = categoria.objects.all()
     return render_to_response('lista_categorias.html', {'lista': categorias}, context_instance=RequestContext(request))
@@ -61,7 +64,7 @@ def lista_productos(request):
 
 
 
-
+@permission_required('principal.change_producto',login_url='/')
 def update_produc(request, id_prod):
     if request.user.is_authenticated():
         productos = get_object_or_404(producto, pk=id_prod)

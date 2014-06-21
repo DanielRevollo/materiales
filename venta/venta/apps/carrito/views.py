@@ -12,15 +12,9 @@ from venta.apps.usuarios.models import *
 from venta.apps.principal.models import *
 from venta.apps.carrito.form import *
 
+from django.contrib.auth.decorators import login_required
 
-
-#def new_venta(request, venta_id=0):
-#    if int(venta_id) == 0:
-#        ven = Venta.objects.create(
-#            cliente=request.user
-#        )
-
-
+@login_required(login_url='/login')
 def new_venta(request, venta_id=0):
     if int(venta_id) == 0:
         ven = Venta.objects.create(cliente=request.user)
@@ -34,6 +28,8 @@ def new_venta(request, venta_id=0):
                               context_instance=RequestContext(request))
 
 
+
+@login_required(login_url='/login')
 def new_cantidad(request, id_venta, id_pro):
     if request.method == 'POST':
         formulario = CantidadForm(request.POST)
@@ -51,15 +47,20 @@ def new_cantidad(request, id_venta, id_pro):
             vent.costo_total = vent.costo_total + costo
             vent.save()
             sto = stock.objects.get(reg_pro_id=id_pro)
-            sto.cantidad = sto.cantidad - int(cant)
-            sto.save()
-            return HttpResponseRedirect('/carrito/new/' + str(id_venta) + '/')
+            if cant>=sto.cantidad:
+                sto.cantidad = sto.cantidad - int(cant)
+                sto.save()
+                return HttpResponseRedirect('/carrito/new/' + str(id_venta) + '/')
+            else:
+                return HttpResponseRedirect('/')
     else:
         formulario = CantidadForm()
     return render_to_response('carrito/cantidad.html', {'formulario': formulario},
                               context_instance=RequestContext(request))
 
 
+
+@login_required(login_url='/login')
 def confirmar(request, id_venta, ):
     ven = get_object_or_404(Venta, pk=id_venta)
     ven.estado = True
