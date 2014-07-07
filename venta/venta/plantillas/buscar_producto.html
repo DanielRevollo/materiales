@@ -1,0 +1,29 @@
+<script>
+	jQuery(document).ready(function($) {
+		$("#search-form").on("keyup",function(e){
+			if(e.which!=8){
+				$.ajax({
+					url: 'url(r'^resultdos/')',
+					type: 'POST',
+					data: $("#busqueda").serialize()
+				})
+				.done(function(html) {
+					console.log("success");
+					$("#resultados").html(html)
+				})
+				.fail(function() {
+					console.log("error");
+				})
+				.always(function() {
+					console.log("complete");
+				});
+			}
+		});
+	});
+</script>
+<div>
+	<form action="" method="post" id="busqueda">
+		{%csrf_token%}
+		{{form}}
+	</form>
+</div>

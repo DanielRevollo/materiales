@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{%block cuerpo %}
+    <ul xmlns="http://www.w3.org/1999/html">
+            <div class="container_12">
+            <div class="wrapper">
+            <div class="grid_12">
+            <div class="wrapper p4">
+
+	{% for item in lista%}
+        <article class="grid_4 alpha">
+			    <div class='ident-left'>
+	<li>
+		{{item.nombre_pro}}
+    <p>
+        <img src="/media/{{ item.portada }}" width="200" height="150">
+	</p>
+    <p> {{item.Precio}}</p>
+    <p>{{ item.descripcion }}</p>
+	</li>
+    </div>
+    </article>
+
+	{%endfor%}
+
+
+    </div>
+        </div>
+        </div>
+        </div>
+        </ul>
+{% endblock cuerpo %}
+{% block cuerpo2 %}
+{% endblock cuerpo2 %}

@@ -1,6 +1,8 @@
 {% extends 'base.html' %}
 {%block cuerpo %}
+    <center>
 <section class="bottom-section" xmlns="http://www.w3.org/1999/html">
+<form>
 			<div class="shell">
 				<div class="cols">
 					<div class="col">
@@ -10,7 +12,10 @@
 					</div>
 
 					<div class="col">
-						<h4>Contactanos</h4>
+                        <div >
+                        <h3 class="prev-indent-bot">Contactanos</h3>
+                        </div>
+
 						<ul>
 							<li>
                             <div class="row">
@@ -26,7 +31,7 @@
                                             <form  action="." method="POST">
                                                 {% csrf_token %}
                                                 {{ form.as_p }}
-                                                <input type="submit" value="Enviar"/>
+                                                <input type="submit" class="button" value="Enviar"/>
                                             </form>
                                         {% endif %}
                                     </div>
@@ -41,7 +46,10 @@
 					<div class="cl">&nbsp;</div>
 				</div>
 			</div>
+</form>
 		</section>
+    <h4> Aganos llegar tus preguntas y/o sugerencias y te responderemos a la brebedad posible</h4>
+    </center>
 {% endblock cuerpo %}
 {% block cuerpo2 %}
 {% endblock cuerpo2 %}

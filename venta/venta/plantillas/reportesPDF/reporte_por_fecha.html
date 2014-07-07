@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Reporte de ventas</title>
+</head>
+<body>
+
+    <style>
+     h2{color: white; display: block; background: royalblue; padding: 10px; text-align: center;}
+     table { padding: 5px;}
+     th{ color: midnightblue; background: skyblue;}
+     td{text-align: center;}
+    </style>
+    <div>
+        <h2>Reporte ventas</h2>
+    </div>
+    <table border="1px" width="100%" align="center">
+        <th>
+            Fecha
+        </th>
+        <th>
+
+            Nro de venta
+        </th>
+        <th>
+            Cliente
+
+        </th>
+        <th>
+            Productos
+        </th>
+        <th>
+            Cantidad
+        </th>
+        <th>
+            Total
+        </th>
+
+        {% for item in pedido %}
+                <tr>
+                    <td> {{item.fecha}}</td>
+                    <td>{{item.id  }} </td>
+                    <td>{{ item.cliente }}</td>
+                    <td><ul>
+                        {% for p in item.producto.all %}
+                            <li>{{p.nombre_pro}} {{p.Precio}} </li>
+                        {% endfor %}
+                        </ul>
+                    </td>
+                    <td>
+                        {{item.cantidad}}
+                    </td>
+                    <td>
+                        {{item.precio_total}}
+                    </td>
+                </tr>
+        {% endfor %}
+
+    </table>
+</body>
+</html>

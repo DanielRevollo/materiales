@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> reporte de los productos</title>
+</head>
+<body>
+
+    <style>
+     h2{color: white; display: block; background: royalblue; padding: 10px; text-align: center;}
+     table { padding: 5px;}
+     th{ color: midnightblue; background: skyblue;}
+    </style>
+    <div>
+        <h2>Reporte</h2>
+    </div>
+    <table border="1px" width="80%" align="center">
+        <th>
+            Producto
+        </th>
+        <th>
+            Precio
+        </th>
+        <th>
+            Cantidad
+        </th>
+        <th>
+            Descripcion
+        </th>
+
+        {% for i in productos %}
+            {% for sto in stock %}
+                {% if i.id == sto.reg_pro_id %}
+            <tr>
+
+                <td>
+                    {{ i.nombre_pro}}
+                </td>
+                <td>
+                    {{ i.Precio}}
+                </td>
+                <td>
+                    {{ sto.cantidad }}
+                </td>
+                <td>
+                    {{ i.descripcion }}
+                </td>
+
+            </tr>
+                {% endif %}
+        {% endfor %}
+    {% endfor %}
+
+       </table>
+</body>
+</html>

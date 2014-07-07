@@ -20,3 +20,7 @@ class ContactoForm(forms.Form):
     Titulo=forms.CharField(widget=forms.TextInput())
     Texto=forms.CharField(widget=forms.Textarea())
 #lo que isimos por el amail
+
+class fusuario(forms.Form):
+    username=forms.CharField(widget=forms.TextInput(),required=True)
+    password=forms.CharField(widget=forms.PasswordInput(),required=True)

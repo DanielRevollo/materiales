@@ -7,8 +7,12 @@
 				<div class="content">
 					<h3>Datos de Usuario</h3>
                     <div class="col">
-				         <form action="" method="POST" class="form-horizontal"> {% csrf_token %}
-                            {{ formulario.as_p }}
+				         <form action="." method="POST" class="form-horizontal" id="fregistro"> {% csrf_token %}
+                            <div id="resultado" class="color-4">
+
+                            </div>
+                             {{ formulario.as_p }}
+
                                     {% for field in formularioPerfil %}
 						                {{field.errors}}
 						            <div class = "control-group">
@@ -18,7 +22,7 @@
 							            </div>
 						            </div>
 					                {% endfor %}
-                                    <input type="submit" class="send-btn" value="GUARDAR">
+                                    <input type="submit" class="button" value="GUARDAR">
                          </form>
                     </div>
 				</div>

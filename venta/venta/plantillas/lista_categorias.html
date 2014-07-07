@@ -16,7 +16,7 @@
 
                             <form action="" method="post" enctype="multipart/form-data" class="form-horizontal">{% csrf_token %}
 
-                                <a href="/categoria/nueva" class="more-btn"><h4>Agregar categoria</h4> </a>
+                                <a href="/categoria/nueva" class="button"><h4>Agregar categoria</h4> </a>
                                 {% for dato in lista %}
                                 <li>
                                 <h3>{{ dato.nombre_cat }}</h3>

@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% block cuerpo %}
+    <script>
+        function crear(){
+            var opcion = $("#sopcion").val();
+            if(opcion==1){
+                $("#campo").html("");
+            }
+            if(opcion==2){
+                $("#campo").html("");
+            }
+        }
+    </script>
+    <div class="caja">
+        <div class="contenedor" id="producto">
+        <h4>Productos en Carrito</h4>
+        {% if carr.count > 0 %}
+            <table>
+                <tr>
+                    <th>Producto</th>
+                    <th>Imagen</th>
+                    <th>Cantidad</th>
+                    <th>Opciones</th>
+                </tr>
+                {% for i in carr %}
+                    <tr>
+                        <td>
+                            {{ i.producto.nombre_pro }}
+                        </td>
+                        <td>
+                            <img src="/media/{{ i.producto.portada }}" width="200" height="150">
+                        </td>
+                        <td>
+                            {{ i.cantidad }}
+                        </td>
+                        <td>
+                            <a href="/carrito/eliminar/{{ i.id }}/">Eliminar de Carrito</a>
+                        </td>
+                    </tr>
+                {% endfor %}
+            </table>
+            <h2>elija tipo de tarjeta</h2>
+            <form method="post" action="">
+                {% csrf_token %}
+            <select id="sopcion" name="sopcion" onchange="crear()">
+            <option value="0" id="0">seleccionar tipo de tarjeta</option>
+            <option value="1" id="1">visa</option>
+            <option value="2" id="2">mastercaps</option>
+        </select><br>
+            <h2> Introdusca Nro de tarjeta</h2><br>
+            <input type="text"><br>
+            </form>
+            <a href="/producto/comprar/final/">Realizar Transacción</a>
+        {% else %}
+            No existen productos en el carrito
+        {% endif %}
+        </div>
+    </div>
+{% endblock cuerpo %}
+{% block cuerpo2 %}
+{% endblock cuerpo2 %}

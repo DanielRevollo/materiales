@@ -1,0 +1,28 @@
+<script>
+    $( "#fcarrito" ).submit(function( event ) {
+        //Aqui enviamos el formulario mediante ajax
+        var direccion=$("#fcarrito").attr('action');
+        $.ajax({
+            type:'POST',
+            url:direccion,
+            data:$("#fcarrito").serialize(),
+            success: ActualizarCarrito,
+            error:errores
+        });
+        event.preventDefault()
+        $('.reveal-modal').trigger('reveal:close');
+    });
+    function ActualizarCarrito(data){
+        $('#carrito').text(data);
+    }
+    function errores(){
+        alert("Error en el servidor");
+    }
+</script>
+<form action="/productos/carrito/add/{{ pro.id }}/" method="post" id="fcarrito">
+    {% csrf_token %}
+    <h3>Nombre: {{ pro.nombre_pro }}</h3>
+    <p><img src="/media/{{ pro.portada }}" width="100" height="50"></p>
+    {{ fcarr }}
+    <input type="submit" value="Añadir a Carrito">
+</form>

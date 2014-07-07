@@ -74,10 +74,10 @@ h1 {padding:15px 0 0 0;position:relative;font-weight:normal;text-transform:upper
 .logo {display:inline-block;font-size:60px;line-height:1.2em;;color:#262626;cursor:pointer;letter-spacing:-3px}
 	.logo strong {color:#ff9601; font-weight:normal}
 /***** menu *****/
-.menu {padding:0;width:100%}
+.menu {padding:0;width:150%}
 .menu li {float:left;position:relative}
 	.menu li:first-child {background:url(../images/menu-a-tail.gif) 0 -71px no-repeat}
-.menu li a {font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;display:block;width:188px;font-size:21px;line-height:1.238em;padding:21px 0 24px 0;color:#262626;text-align:center;text-transform:uppercase;background:url(../images/menu-a-tail.gif) right -71px no-repeat;letter-spacing:-1px}
+.menu li a {font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;display:block;width:150px;font-size:21px;line-height:1.238em;padding:21px 0 24px 0;color:#262626;text-align:center;text-transform:uppercase;background:url(../images/menu-a-tail.gif) right -71px no-repeat;letter-spacing:-1px}
 .menu li a:hover,
 .menu li a.active {color:#fff;background-position:left top;background-repeat:repeat-x;background-color:#000}
 /***** search form *****/
@@ -92,7 +92,7 @@ h1 {padding:15px 0 0 0;position:relative;font-weight:normal;text-transform:upper
 .padding {padding:30px 0px 38px}
 /* -- gallery  begin --*/
  div.content {/* The display of content is enabled using jQuery so that the slideshow content won't display unless javascript is enabled. */
-	display: none;width: 620px;height: 403px;margin:  0;padding: 0px;float: left;overflow: hidden}
+	display: none;width: 620px;height: 450px;margin:  0;padding: 0px;float: left;overflow: hidden}
  div.content img {position: relative;z-index: 2}
  div.content a, div.navigation a {text-decoration: none;display:block;position:relative;cursor:pointer}
 	div.content a img, div.navigation a img {position:relative;	z-index:1}
@@ -108,11 +108,11 @@ h1 {padding:15px 0 0 0;position:relative;font-weight:normal;text-transform:upper
  div.nav-controls a.prev:hover {background:url(../images/prev-h.gif) no-repeat 0 0}
  div.nav-controls a.next {background:url(../images/next.gif) no-repeat 0 0;width:39px;height:39px;text-indent:-5000px;position:absolute;bottom:2px;right:0;z-index:11}
  div.nav-controls a.next:hover {background:url(../images/next-h.gif) no-repeat 0 0}
- div.slideshow-container {position: relative;height: 403px; /* This should be set to be at least the height of the largest image in the slideshow */z-index:1}
+ div.slideshow-container {position: relative;height: 450px; /* This should be set to be at least the height of the largest image in the slideshow */z-index:1}
  div.loader {position: absolute;top: 0;left: 0;background-image:url(images/loader.gif);background-repeat: no-repeat;background-position: center;width: 592px;height: 470px; /* This should be set to be at least the height of the largest image in the slideshow */}
  div.slideshow {}
- div.slideshow span.image-wrapper {display: block;width: 620px;height: 403px;position:absolute;left:0;top:0}
- div.slideshow a.advance-link {display: block;width: 620px;height: 403px; /* This should be set to be at least the height of the largest image in the slideshow */	padding: 0;margin: 0}
+ div.slideshow span.image-wrapper {display: block;width: 620px;height: 450px;position:absolute;left:0;top:0}
+ div.slideshow a.advance-link {display: block;width: 620px;height: 450px; /* This should be set to be at least the height of the largest image in the slideshow */	padding: 0;margin: 0}
  div.slideshow a.advance-link img {padding:0;margin:0;display:block;position:absolute;left:0;top:0}
  div.slideshow a.advance-link:hover, div.slideshow a.advance-link:active, div.slideshow a.advance-link:visited {text-decoration: none}
  div.slideshow img {}
@@ -125,7 +125,7 @@ h1 {padding:15px 0 0 0;position:relative;font-weight:normal;text-transform:upper
  div.image-title {}
  div.image-desc {}
  div.navigation {}
- div#thumbs {width: 320px;height:403px;overflow: hidden;padding: 0px 0px 0 0}
+ div#thumbs {width: 320px;height:450px;overflow: hidden;padding: 0px 0px 0 0}
  ul.thumbs {float: right;margin-left:0;padding: 0;width:320px;height:auto;overflow:visible}
  ul.thumbs li {height: 121px;float:left;margin: 0 20px 20px 0;overflow: hidden;padding: 0;vertical-align:top}
  ul.thumbs li img {border: none}
@@ -138,7 +138,7 @@ h1 {padding:15px 0 0 0;position:relative;font-weight:normal;text-transform:upper
  div.pagination span.current {color:#ffeaa8}
  div.pagination span.ellipsis {border: none;padding: 5px 0 3px 2px}
 /* -- gallery end --*/
-.quote {padding-left:30px;background:url(../images/quote.png) 0 3px no-repeat;position:relative}
+.quote {padding-left:70px;background:url(../images/quote.png) 0 3px no-repeat;position:relative}
 .spacer-1 {width:100%;background:url(../images/pic-1.gif) 217px 0 repeat-y}
 h3 {font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;font-size:36px;line-height:1.2em;margin:0 0 22px 0;color:#262626;font-weight:normal;letter-spacing:-2px}
 h6 {color:#ff9601}
@@ -177,6 +177,11 @@ dl strong {float:left; width:80px; font-weight:normal}
 #carousel li {width:200px !important;height:121px !important;padding:17px 22px 27px;margin-right:-4px;background:url(../images/carousel-li-bg.png) left top no-repeat;position:relative;overflow:hidden}
 	#carousel li a {display:block; position:relative}
 	#carousel li a span {font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;	letter-spacing:-2px;	display:block;	width:78px;	height:35px;	background:#fff;	color:#262626;	font-size:35px;	line-height:1.2em;	position:absolute;	left:0;	bottom:0;	overflow:hidden;	z-index:99}
+
+
+#carousel2 li {width:200px !important;height:25px !important;padding:17px 22px 27px;margin-right:-4px;overflow:hidden}
+
+
 /***** subscribe form *****/
 #subscribe-form {display:block}
 #subscribe-form .subscribe-field {background:#fbfbfb;border:1px solid #fff;width:288px;height:29px;margin-bottom:20px;box-shadow: 0px 5px 8px rgba(0,0,0,0.70);-moz-box-shadow: 0px 5px 8px rgba(0,0,0,0.70);-webkit-box-shadow: 0px 5px 8px rgba(0,0,0,0.70)}
@@ -200,3 +205,5 @@ footer {width:100%;padding:40px 0 33px;background:url(../images/footer-tail.gif)
 		.list-services li a.item-2 {background-position:-80px 0}
 		.list-services li a.item-3 {background-position:-160px 0}
 		.list-services li a.item-4 {background-position:-240px 0}
+
+

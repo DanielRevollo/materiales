@@ -1,0 +1,55 @@
+{% block contenido %}
+    <style >
+     h2{color: white; display: block; background: royalblue; padding: 10px; text-align: center;}
+     table { padding: 5px;}
+     th{ color: midnightblue; background: skyblue;}
+    </style>
+    <div>
+        <h2>Reporte de ventas realizadas por fecha</h2>
+    </div>
+    <table border="1px" width="80%" align="center" >
+        <th>
+            ID
+        </th>
+        <th>
+            NOMBRE
+        </th>
+        <th>
+            CANTIDAD
+        </th>
+        <th>
+            PRECIO TOTAL
+        </th>
+        <th>
+            FECHA
+        </th>
+        {% for i in ventas %}
+         {% for j in usuarios %}
+            {% if i.cliente_id == j.id %}
+
+            <tr>
+                <td>
+                    {{ i.id }}
+                </td>
+                <td>
+                    {{ j.nombre}}
+                </td>
+                <td>
+                    {{ i.cantidad }}
+                </td>
+                <td>
+                    {{ i.precio_total }}
+                </td>
+
+                <td>
+                    {{ i.fecha}}
+                </td>
+
+            </tr>
+        {% endif %}
+        {% endfor %}
+        {% endfor %}
+
+
+    </table></table>
+{% endblock %}

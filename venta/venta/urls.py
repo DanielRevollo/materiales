@@ -31,11 +31,15 @@ urlpatterns = patterns('',
     # logeo de usuarios
     url(r'^login/$','venta.apps.usuarios.views.login_view',name='vista_login'),
     url(r'^logout/$','venta.apps.usuarios.views.logout_view',name='vista_logout'),
+    url(r'^verificar/usuario/$','venta.apps.usuarios.views.verificar'),
+
+    url(r'^usuario/update_usuario/(?P<id>\d+)/$', 'venta.apps.usuarios.views.update_usuario'),
 
     #LISTAD DE PRODUCTOS Y CATEGORIAS
 
     url(r'^categorias/$','venta.apps.principal.views.lista_categorias'),
-    url(r'^productos/$','venta.apps.principal.views.lista_productos'),
+    url(r'^productos_lista/$','venta.apps.principal.views.lista_productos'),
+    url(r'^listado/(?P<categoria>\d+)/$','venta.apps.principal.views.lista_por_categorias'),
 
     # MODIFICACION DE PRODUCTOS
     url(r'^principal/update/(?P<id_prod>\d+)/$', 'venta.apps.principal.views.update_produc'),
@@ -43,11 +47,19 @@ urlpatterns = patterns('',
     url(r'^contacto/$','venta.apps.usuarios.views.contacto'),
 
     #CARRITO DE VENTAS
-    url(r'^carrito/new/(?P<venta_id>\d+)/$', 'venta.apps.carrito.views.new_venta'),
-    url(r'^carrito/cantidad/(?P<id_venta>\d+)/(?P<id_pro>\d+)/$', 'venta.apps.carrito.views.new_cantidad'),
-    url(r'^carrito/confirmar/(?P<id_venta>\d+)/$', 'venta.apps.carrito.views.confirmar'),
-    #url(r'^carrito/factura/$', 'carrito.views.factura'),
+    url(r'^',include("venta.apps.carrito.urls")),
+    #===================================================================
+    url(r'^reportes/$','venta.apps.carrito.views.vista_reporte'),
+    url(r'^reporte/filtro/$','venta.apps.principal.views.reporteFiltro'),
+    url(r'^reporte_productos/$','venta.apps.principal.views.crearReporte'),
+    url(r'^reporte_venta/$','venta.apps.carrito.views.ReporteVentas'),
 
 
+    # urls de la busqueda
+    url(r'^resultdos/$','venta.apps.principal.views.buscarProducto'),
+
+    #======================FACTURA=========================
+    url(r'^factura/(?P<id_venta>\d+)/$', 'venta.apps.carrito.views.factura'),
+    url(r'^usuarios/$', 'venta.apps.usuarios.views.re_usuario'),
 )
 

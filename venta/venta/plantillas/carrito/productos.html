@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block cuerpo %}
+    {% block carrito %}
+    <div id="carrito_content">
+        <h4>Productos en carrito:</h4>
+        <div id="carrito">
+
+        </div>
+        <a href="/confirmar/compra/">Confirmar Compra</a>
+    </div>
+    <div class="caja">
+        <div class="" id="">
+        {% endblock %}
+
+            <ul xmlns="http://www.w3.org/1999/html">
+            <div class="container_12">
+            <div class="wrapper">
+            <div class="grid_12">
+            <div class="wrapper p4">
+            {% for pro in lista_productos %}
+                <article class="grid_4 alpha">
+			    <div class='ident-left'>
+                <h4>{{ pro.nombre_pro }} {{ pro.Precio }} $</h4>
+                <h4>DESCRIPION.-{{pro.descripcion}}</h4>
+                <img src="/media/{{ pro.portada }}" width="200" height="150">
+                <!--<a href="/producto/{{ pro.id }}/"><button>Mas informacion</button></a>-->
+                <div>
+                <a href="/productos/cargar/carrito/{{ pro.id }}/" data-reveal-id="myModal" class="enlace">Comprar</a>
+                </div>
+                </div>
+                </article>
+
+            {% endfor %}
+           </div>
+        </div>
+        </div>
+        </div>
+        </ul>
+
+        </div>
+        <div id="myModal" class="reveal-modal">
+            <div id="formulario">
+            </div>
+        </div>
+    </div>
+{% endblock cuerpo%}
+{% block cuerpo2 %}
+{% endblock cuerpo2 %}

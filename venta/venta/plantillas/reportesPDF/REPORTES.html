@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+    {% block cuerpo %}
+        <center>
+            {% if user.is_authenticated  and user.id == 1 %}
+                <h2>Reportes de productos</h2>
+                <a class="button" href="http://127.0.0.1:8000/reportes/">Ver Reprote</a>
+                <h2>Reportes de ventas</h2>
+                <a class="button" href="http://127.0.0.1:8000/reportes_ventas/">Ver Reprote</a>
+                <h2>Factura</h2>
+                <a class="button" href="http://127.0.0.1:8000/factura/">Ver Reprote</a>
+            {% endif %}
+        </center>
+{% endblock cuerpo %}
+{% block cuerpo2 %}
+{% endblock cuerpo2 %}

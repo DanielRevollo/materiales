@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block cuerpo %}
+        <script>
+        function crearCampo(){
+            var opcion=$("#sopcion").val();
+            //alert(opcion);
+            if(opcion=="1"){
+                html="<input type='date' name='tfecha' id='tfecha'>"
+                $("#campo").html(html);
+            }
+            if(opcion=="2"){
+              // hmtl="<input type='char' name='tnombre' id='tnombre'>"
+                $("#campo").html();
+            }
+
+        }
+    </script>
+
+    <style>
+        h3.prev-indent-bot{text-align: center;color: blue;background: mediumaquamarine;}
+
+    </style>
+    <div class="col">
+        <h3 class="prev-indent-bot"> Tenemos los siguintes reportes</h3>
+    </div>
+
+    <form action="/reporte/filtro/" method="post" name="fopcion">
+    {% csrf_token %}
+        <select id="sopcion" name="sopcion" onchange="crearCampo()">
+            <option value="0" id="0">seleccionar tipo reporte</option>
+            <option value="1" id="1">ver reporte por fecha</option>
+            <option value="2" id="2">ordenar productos alfebeticamente</option>
+        </select>
+        <div id="campo">
+        </div>
+        <input type="submit" value="generara reporte">
+    </form>
+    <h2> Reportes de todos los productos</h2>
+    <img src="{{ STATIC_URL }}html/images/images (261).jpg" alt="" /><br>
+    <a class="search-button" href="{% url 'venta.apps.principal.views.crearReporte' %}"><span>Ver Reporte</span></a>
+    <h2> Reportes de todas las ventas</h2>
+    <img src="{{ STATIC_URL }}html/images/images (121).jpg" alt="" /><br>
+    <a class="search-button" href="{% url 'venta.apps.carrito.views.ReporteVentas' %}"><span>Ver Reporte</span></a>
+    <h2> Reportes de todos los ususarios</h2>
+    <img src="{{ STATIC_URL }}html/images/imagess (2).jpg" alt="" /><br>
+    <a class="search-button" href="{% url 'venta.apps.usuarios.views.re_usuario' %}"><span>Ver Reporte</span></a>
+
+{% endblock cuerpo %}
+{% block cuerpo2 %}
+{% endblock cuerpo2 %}

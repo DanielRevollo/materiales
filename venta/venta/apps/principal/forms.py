@@ -17,3 +17,7 @@ class StockForm(ModelForm):
 class ProductoForm(ModelForm):
     class Meta:
         model=producto
+
+
+class buscarProForm(forms.Form):
+	buscar=forms.CharField(max_length=200)

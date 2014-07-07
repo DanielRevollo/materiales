@@ -5,9 +5,7 @@
 			<div class="span6">
 				<form action="" method="post" enctype="multipart/form-data" class="form-horizontal">{% csrf_token %}
 					{% for field in formulario %}
-
 						{{field.errors}}
-
 						<div class = "control-group">
 							{{ field.label_tag }}
 							<div class="controls">
@@ -16,12 +14,9 @@
 						</div>
 					{% endfor %}
 					<button type="submit"> guardar</button>
-
 				</form>
-
 			</div>
 			<div class ="span3"></div>
-
 		</div>
 		<script>
 			$('label').addClass('control-label')

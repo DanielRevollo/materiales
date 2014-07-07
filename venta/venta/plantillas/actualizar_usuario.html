@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{%block cuerpo %}
+		<div class="row">
+			<div class="span3"></div>
+			<div class="span6">
+				<form action="" method="post" enctype="multipart/form-data" class="form-horizontal">{% csrf_token %}
+					{% for fila in usuario %}
+						{{fila.errors}}
+
+						<div class = "control-group">
+							{{ fila.label_tag }}
+							<div class="controls">
+								{{ fila}}
+
+							</div>
+
+						</div>
+					{% endfor %}
+                <button type="submit"> modificar </button>
+                </form>
+
+
+{% endblock cuerpo %}
+{% block cuerpo2 %}
+{% endblock cuerpo2 %}

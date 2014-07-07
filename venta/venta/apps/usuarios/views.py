@@ -16,6 +16,23 @@ from django.contrib.auth.forms import UserCreationForm,AuthenticationForm
 from django.contrib.auth import login,authenticate,logout
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.decorators import login_required,permission_required
+import StringIO
+#from xhtml12pdf import pisa
+from xhtml2pdf import pisa
+from django.template.loader import render_to_string
+
+import json
+
+def verificar(request):
+    if request.method=='POST':
+        usuario=request.POST['username']
+        try:
+            u=User.objects.get(username=usuario)
+            return HttpResponse("El nombre de usuario ya existe porfavor escoja otro")
+        except User.DoesNotExist:
+            return HttpResponse("Puede usar el nombre de usuario")
+    else:
+        return HttpResponse()
 
 
 def nuevo_usuario(request):
@@ -29,7 +46,9 @@ def nuevo_usuario(request):
 
             perfil.per_user=perfil
             perfil.save()
-        return HttpResponseRedirect('/')
+        else:
+            return HttpResponseRedirect('/usuario/new/')
+        return HttpResponseRedirect('/login/')
     else:
         formulario = UserCreationForm()
         formularioPerfil=perfil_userForm()
@@ -84,3 +103,61 @@ def contacto(request):
         formulario = ContactoForm()
     ctx = {'form': formulario, "email": email, "titulo": titulo, "texto": texto, "info_enviado": info_enviado}
     return render_to_response('contactoform.html', ctx, context_instance=RequestContext(request))
+
+@login_required(login_url='/login')
+def update_usuario(request,id):
+    if request.user.is_authenticated():
+        usuario=User.objects.get(id=id)
+        usu=perfil_user.objects.get(user_id=id)
+        if request.method=='POST':
+            formulario=fusuario(request.POST)
+            if formulario.is_valid():
+                contrasena=request.POST["password"]
+                usuario.set_password(contrasena)
+                usuario.save()
+
+                return HttpResponseRedirect('/')
+        else:
+
+            formulario=fusuario()
+        return render_to_response("actualizar_usuario.html",{"usuario":formulario},context_instance=RequestContext(request))
+    else:
+        return HttpResponseRedirect('/')
+
+
+
+
+def re_usuario(request):
+    usu=perfil_user.objects.all()
+    html=render_to_string('reportesPDF/reporteusuario.html',{'pagesize':'A4','usu':usu},context_instance=RequestContext(request))
+    return generar_pdf(html)
+
+def generar_pdf(html):
+    resultado=StringIO.StringIO()
+    pdf=pisa.pisaDocument(StringIO.StringIO(html.encode("UTF:8")),resultado)
+    if not pdf.err:
+        return HttpResponse(resultado.getvalue(),mimetype='application/pdf')
+    return HttpResponse("Error en generar el pdf")
+
+#def update_usuario(request,id):
+#    perfil=perfil_user.objects.get(id=id)
+#    form=perfil_userForm(perfil)
+#    if request.method=="POST":
+#        form=perfil_userForm(request.POST)
+#        if form.is_valid():
+#            nombre=request.POST["nombre"]
+#            ap_paterno=request.POST["ap_paterno"]
+#            ap_materno=request.POST["ap_materno"]
+#            CI_NIT=request.POST["CI_NIT"]
+#            email=request.POST["email"]
+#            idPerfil=id
+#            perfil=perfil_user.objects.get(id=idPerfil)
+#            perfil.nombre=nombre
+#            perfil.ap_paterno=ap_paterno
+#            perfil.ap_materno=ap_materno
+#            perfil.CI_NIT=CI_NIT
+#            perfil.email=email
+#            perfil.save()
+#            respuesta={"exito":True}
+#            return HttpResponse(json.dumps(respuesta),content_type="application/json")
+#    return render_to_response("actualizar_usuario.html",{"usuario":form},RequestContext(request))

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="2274077461">
-    <data-source source="LOCAL" name="Django default" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="85f6ecf9-d8e9-44d2-9afb-ec8e006160a9">
+  <component name="DataSourceManagerImpl" format="xml" hash="1546564095">
+    <data-source source="LOCAL" name="Django default" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="c06689bd-3e94-4e4a-84a7-d972a6ba33c0">
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql:///venta</jdbc-url>
+      <jdbc-url>jdbc:mysql:///ventacarrito</jdbc-url>
       <user-name>root</user-name>
       <libraries>
         <library>

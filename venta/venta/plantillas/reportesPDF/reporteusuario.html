@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Reportes de usuarios</title>
+</head>
+<body>
+
+    <style>
+     h2{color: white; display: block; background: royalblue; padding: 10px; text-align: center;}
+     table { padding: 5px;}
+     th{ color: midnightblue; background: skyblue;}
+    </style>
+    <div>
+        <h2>Reporte de Usuarios</h2>
+    </div>
+    <table border="1px" width="80%" align="center">
+        <th>
+            Nombre completo
+        </th>
+        <th>
+            CI/NIT
+        </th>
+        <th>
+            Email
+        </th>
+
+
+        {% for u in usu %}
+            <tr>
+
+                <td>
+                    {{ u.nombre}} {{ u.ap_paterno }} {{ u.ap_materno }}
+                </td>
+
+                <td>
+                    {{ u.CI_NIT }}
+                </td>
+                <td>
+                    {{ u.email }}
+                </td>
+
+            </tr>
+
+    {% endfor %}
+
+       </table>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    
+</head>
+<body>
+
+<style>
+
+
+     h2{color: white; display: block; background: royalblue; padding: 10px; text-align: center;}
+    tr.stilo{ color: #ff0000; background: royalblue;border: 1}
+
+
+
+    table{ padding: 10px; color:blue}
+    th.cabecera{ padding: 10px; text-align: center; }
+    th.info{padding: 10px; text-align: center;}
+    td{text-align: center;}
+    tr.bordes{border: 0}
+
+</style>
+
+<table border="1" cellpadding="10"  >
+    <tr  class="bordes">
+        <th class="cabecera" colspan="2"><h2>FACTURA</h2>
+            <h2> MATERIALES DE CONSTRUCCION MASSIEL     <br>
+            LA SOLUCION PARA SU CONSTRUCCION</h2>
+        Dir. Calle Chayanta # 45<br>
+        Tel. 62-22689------ 6245678<br>
+        Potosi-- Bolivia 45<br>
+        </th>
+        <th class=" info" colspan="3">
+        NIT: 1326523019 <br>
+        Factura Nro:000{{ pedido.id }} <br>
+        Num Autorizacion 5004001137673 <br>
+        <h11>================================</h11><br>
+        Fecha: 12/12/12  Horas: 12:00<br>
+        NIT/CI:{{ usu.CI_NIT }}<br>
+
+        Nombre: {{ usu.nombre }} {{ usu.ap_paterno }} {{ usu.ap_materno }}
+    </th>
+
+    </tr>
+
+    <tr class="stilo">
+    <th >Cantidad TOTAL</th>
+    <th colspan="2">Descripcion</th>
+    <th>P.Unit</th>
+    <th>Total</th>
+    {% for item in venta %}
+
+    </tr>
+
+        <td> {{ item.cantidad }} </td>
+        <td colspan="2"> <ul>
+             {% for p in item.producto.all %}
+
+               <li>{{p.nombre_pro}} </li>
+
+             {% endfor %}
+             </ul>
+        </td>
+
+        <td > <ul>
+             {% for p in item.producto.all %}
+               <li>{{p.Precio}} </li>
+             {% endfor %}
+             </ul>
+        </td>
+
+
+        <td>
+            {{ item.precio_total }}
+        </td>
+
+    </tr>
+
+    {% endfor %}
+    <td colspan="3">total a pagar</td>
+    <td colspan="2"> {{ pedido.precio_total }}</td>
+</tr>
+
+<tr>
+    <td colspan="2">codigo de control</td>
+    <td colspan="3">BF-C0-75-27-DE</td>
+</tr>
+<tr class="stilo">
+    <td colspan="5">La reproduccion parcial y/o el uso no autorizado de esta nota fiscal, <br>contribuye un delito a ser sanciondo conforme a ley</td>
+</tr>
+<tr>
+    <td colspan="5"> GRACIAS POR SU PREFERENCIA</td>
+
+</tr>
+
+</table>
+
+
+</body>
+</html>
