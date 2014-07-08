@@ -61,5 +61,6 @@ urlpatterns = patterns('',
     #======================FACTURA=========================
     url(r'^factura/(?P<id_venta>\d+)/$', 'venta.apps.carrito.views.factura'),
     url(r'^usuarios/$', 'venta.apps.usuarios.views.re_usuario'),
+    url(r'^codigo/(?P<id>\d+)/$', 'venta.apps.carrito.views.geneFactura'),
 )
 

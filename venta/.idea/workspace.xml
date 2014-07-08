@@ -5,7 +5,7 @@
     <ignored path="venta.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/settings.py" changelist="b97a9e48-d169-4714-9baf-7cf412724083" time="1404596479905" ignored="false" />
-    <file path="/views.py" changelist="b97a9e48-d169-4714-9baf-7cf412724083" time="1404668858684" ignored="false" />
+    <file path="/views.py" changelist="b97a9e48-d169-4714-9baf-7cf412724083" time="1404790345481" ignored="false" />
     <file path="/urls.py" changelist="b97a9e48-d169-4714-9baf-7cf412724083" time="1404589360128" ignored="false" />
     <file path="/base.html" changelist="b97a9e48-d169-4714-9baf-7cf412724083" time="1404666097776" ignored="false" />
     <file path="/models.py" changelist="b97a9e48-d169-4714-9baf-7cf412724083" time="1400939623981" ignored="false" />
@@ -57,8 +57,8 @@
     <file path="F:/venta/venta/apps/carrito/views.py" changelist="b97a9e48-d169-4714-9baf-7cf412724083" time="1404313237249" ignored="false" />
     <file path="/reporteusuario.html" changelist="b97a9e48-d169-4714-9baf-7cf412724083" time="1404353956968" ignored="false" />
     <file path="/vista_reporte.html" changelist="b97a9e48-d169-4714-9baf-7cf412724083" time="1404667007346" ignored="false" />
-    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="b97a9e48-d169-4714-9baf-7cf412724083" time="1404668867205" ignored="false" />
-    <file path="/confirmar_compra.html" changelist="b97a9e48-d169-4714-9baf-7cf412724083" time="1404666765334" ignored="false" />
+    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="b97a9e48-d169-4714-9baf-7cf412724083" time="1404793989545" ignored="false" />
+    <file path="/confirmar_compra.html" changelist="b97a9e48-d169-4714-9baf-7cf412724083" time="1404791817381" ignored="false" />
     <file path="F:/arreglando carrito/venta/venta/plantillas/reportesPDF/vista_reporte.html" changelist="b97a9e48-d169-4714-9baf-7cf412724083" time="1404667007346" ignored="false" />
     <file path="F:/arreglando carrito/venta/venta/apps/carrito/views.py" changelist="b97a9e48-d169-4714-9baf-7cf412724083" time="1404668861252" ignored="false" />
     <file path="F:/arreglando carrito/venta/venta/plantillas/reportesPDF/factura.html" changelist="b97a9e48-d169-4714-9baf-7cf412724083" time="1404667752633" ignored="false" />
@@ -85,19 +85,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/venta/apps/carrito/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="229" column="27" selection-start="7782" selection-end="9336" vertical-scroll-proportion="0.9354839">
+            <state line="65" column="0" selection-start="2615" selection-end="2615" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="reporteventa.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/venta/plantillas/reportesPDF/reporteventa.html">
+      <file leaf-file-name="codigo.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/venta/plantillas/codigo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="32" selection-start="885" selection-end="885" vertical-scroll-proportion="-4.076923">
+            <state line="8" column="7" selection-start="99" selection-end="99" vertical-scroll-proportion="-5.230769">
               <folding />
             </state>
           </provider>
@@ -106,16 +106,16 @@
       <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/venta/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="4" selection-start="2601" selection-end="2661" vertical-scroll-proportion="0.0">
+            <state line="63" column="74" selection-start="2738" selection-end="2738" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="confirmar_compra.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="confirmar_compra.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/venta/plantillas/carrito/confirmar_compra.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="14" selection-start="1999" selection-end="1999" vertical-scroll-proportion="-26.961538">
+            <state line="58" column="46" selection-start="1893" selection-end="1893" vertical-scroll-proportion="0.6031128">
               <folding />
             </state>
           </provider>
@@ -124,7 +124,7 @@
       <file leaf-file-name="cantidad.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/venta/plantillas/carrito/cantidad.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding>
                 <marker date="1402173771218" expanded="true" signature="62:542" placeholder="..." />
                 <marker date="1402173771218" expanded="true" signature="114:503" placeholder="..." />
@@ -140,7 +140,7 @@
       <file leaf-file-name="fcarrito.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/venta/plantillas/carrito/fcarrito.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="50" selection-start="884" selection-end="884" vertical-scroll-proportion="-17.0">
+            <state line="26" column="50" selection-start="884" selection-end="884" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -149,7 +149,7 @@
       <file leaf-file-name="vista_reporte.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/venta/plantillas/reportesPDF/vista_reporte.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="0" selection-start="1585" selection-end="1818" vertical-scroll-proportion="-11.923077">
+            <state line="42" column="4" selection-start="1502" selection-end="1571" vertical-scroll-proportion="-11.615385">
               <folding />
             </state>
           </provider>
@@ -158,16 +158,16 @@
       <file leaf-file-name="factura.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/venta/plantillas/reportesPDF/factura.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="0" selection-start="1190" selection-end="1190" vertical-scroll-proportion="-29.423077">
+            <state line="85" column="4" selection-start="1941" selection-end="1941" vertical-scroll-proportion="-9.153846">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/venta/apps/principal/views.py">
+      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/venta/apps/carrito/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="121" column="0" selection-start="5409" selection-end="5444" vertical-scroll-proportion="0.0">
+            <state line="29" column="34" selection-start="961" selection-end="961" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -192,7 +192,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/venta/plantillas/carrito/productos.html" />
         <option value="$PROJECT_DIR$/venta/plantillas/login.html" />
         <option value="$PROJECT_DIR$/venta/plantillas/reportesPDF/reporteventa.html" />
         <option value="$PROJECT_DIR$/venta/apps/principal/views.py" />
@@ -202,12 +201,13 @@
         <option value="$PROJECT_DIR$/venta/plantillas/actualizar_usuario.html" />
         <option value="$PROJECT_DIR$/venta/plantillas/base.html" />
         <option value="$PROJECT_DIR$/venta/plantillas/reportesPDF/reporte_por_fecha.html" />
-        <option value="$PROJECT_DIR$/venta/urls.py" />
-        <option value="$PROJECT_DIR$/venta/plantillas/carrito/confirmar_compra.html" />
-        <option value="$PROJECT_DIR$/venta/plantillas/reportesPDF/factura.html" />
         <option value="$PROJECT_DIR$/venta/plantillas/reportesPDF/vista_reporte.html" />
-        <option value="$PROJECT_DIR$/venta/apps/carrito/views.py" />
         <option value="$PROJECT_DIR$/venta/settings.py" />
+        <option value="$PROJECT_DIR$/venta/apps/carrito/models.py" />
+        <option value="$PROJECT_DIR$/venta/plantillas/reportesPDF/factura.html" />
+        <option value="$PROJECT_DIR$/venta/urls.py" />
+        <option value="$PROJECT_DIR$/venta/apps/carrito/views.py" />
+        <option value="$PROJECT_DIR$/venta/plantillas/carrito/confirmar_compra.html" />
       </list>
     </option>
   </component>
@@ -289,7 +289,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="plantillas" />
+              <option name="myItemId" value="static" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -307,11 +307,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="plantillas" />
+              <option name="myItemId" value="static" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="reportesPDF" />
+              <option name="myItemId" value="html" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -329,11 +329,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="plantillas" />
+              <option name="myItemId" value="static" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="carrito" />
+              <option name="myItemId" value="html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -352,28 +356,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="apps" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="venta" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="venta" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="venta" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="apps" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="usuarios" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -422,6 +404,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\arreglando carrito con sqlite\venta\venta\plantillas" />
       <recent name="F:\venta\venta\carga" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -587,14 +570,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991454" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24242425" sideWeight="0.6712095" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24621212" sideWeight="0.6712095" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
@@ -683,16 +666,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/venta/plantillas/reportesPDF/reporte_por_fecha.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="7" selection-start="1410" selection-end="1410" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venta/apps/carrito/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="9" selection-start="349" selection-end="349" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/venta/plantillas/contactoform.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="34" column="51" selection-start="1463" selection-end="1463" vertical-scroll-proportion="0.0" />
@@ -719,23 +692,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/venta/plantillas/reportesPDF/factura.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="0" selection-start="1190" selection-end="1190" vertical-scroll-proportion="-29.423077">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/venta/plantillas/reportesPDF/reporteventa.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="32" selection-start="885" selection-end="885" vertical-scroll-proportion="-4.076923">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venta/plantillas/reportesPDF/vista_reporte.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="0" selection-start="1585" selection-end="1818" vertical-scroll-proportion="-11.923077">
+        <state line="42" column="32" selection-start="885" selection-end="885" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -750,20 +709,6 @@
     <entry file="file://$PROJECT_DIR$/venta/apps/usuarios/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="148" column="6" selection-start="5585" selection-end="5585" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venta/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="4" selection-start="2601" selection-end="2661" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venta/plantillas/carrito/confirmar_compra.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="14" selection-start="1999" selection-end="1999" vertical-scroll-proportion="-26.961538">
           <folding />
         </state>
       </provider>
@@ -784,14 +729,56 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/venta/plantillas/carrito/fcarrito.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="50" selection-start="884" selection-end="884" vertical-scroll-proportion="-17.0">
+        <state line="26" column="50" selection-start="884" selection-end="884" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venta/apps/carrito/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="34" selection-start="961" selection-end="961" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venta/plantillas/codigo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="7" selection-start="99" selection-end="99" vertical-scroll-proportion="-5.230769">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venta/plantillas/reportesPDF/factura.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="85" column="4" selection-start="1941" selection-end="1941" vertical-scroll-proportion="-9.153846">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venta/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="74" selection-start="2738" selection-end="2738" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/venta/apps/carrito/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="229" column="27" selection-start="7782" selection-end="9336" vertical-scroll-proportion="0.9354839">
+        <state line="65" column="0" selection-start="2615" selection-end="2615" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venta/plantillas/reportesPDF/vista_reporte.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="4" selection-start="1502" selection-end="1571" vertical-scroll-proportion="-11.615385">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venta/plantillas/carrito/confirmar_compra.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="46" selection-start="1893" selection-end="1893" vertical-scroll-proportion="0.6031128">
           <folding />
         </state>
       </provider>

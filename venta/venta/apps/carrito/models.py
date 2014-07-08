@@ -20,3 +20,12 @@ class Carrito(models.Model):
     cantidad=models.IntegerField()
 
 
+
+class factura(models.Model):
+    N_Autorizacion=models.CharField(max_length=15,verbose_name="N_autorizacion")
+    llave=models.CharField(max_length=20,verbose_name="llave")
+    Dato=models.ForeignKey(Pedido)
+    nit=models.ForeignKey(perfil_user)
+    def __unicode__(self):
+        return self.N_Autorizacion
+
